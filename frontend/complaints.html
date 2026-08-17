@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Complaints - PGCare</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">PGCare</div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="submit.html">Submit</a>
+        <a href="complaints.html">Complaints</a>
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <h1>All Complaints</h1>
+
+    <br>
+
+
+    <div class="filters">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search resident, room or category"
+            oninput="filterComplaints()">
+
+
+        <select
+            id="filterCategory"
+            onchange="filterComplaints()">
+
+            <option value="">All Categories</option>
+
+            <option value="Electricity">
+                Electricity
+            </option>
+
+            <option value="Plumbing">
+                Plumbing
+            </option>
+
+            <option value="Water Supply">
+                Water Supply
+            </option>
+
+            <option value="Internet">
+                Internet
+            </option>
+
+            <option value="Housekeeping">
+                Housekeeping
+            </option>
+
+            <option value="Maintenance">
+                Maintenance
+            </option>
+
+            <option value="Other">
+                Other
+            </option>
+
+        </select>
+
+
+        <select
+            id="filterStatus"
+            onchange="filterComplaints()">
+
+            <option value="">All Status</option>
+
+            <option value="Pending">
+                Pending
+            </option>
+
+            <option value="In Progress">
+                In Progress
+            </option>
+
+            <option value="Resolved">
+                Resolved
+            </option>
+
+            <option value="Cancelled">
+                Cancelled
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="complaintList"
+        class="complaint-list">
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

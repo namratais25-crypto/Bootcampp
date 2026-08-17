@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Submit Complaint - PGCare</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">PGCare</div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="submit.html">Submit</a>
+        <a href="complaints.html">Complaints</a>
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <h1>Submit a Complaint</h1>
+
+    <br>
+
+    <div class="form-box">
+
+        <form id="complaintForm">
+
+            <div class="form-group">
+
+                <label>Resident Name *</label>
+
+                <input
+                    type="text"
+                    id="residentName"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Room / Flat Number *</label>
+
+                <input
+                    type="text"
+                    id="roomNumber"
+                    placeholder="Example: A-204"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Contact Number *</label>
+
+                <input
+                    type="tel"
+                    id="contact"
+                    maxlength="10"
+                    placeholder="10 digit mobile number"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Complaint Category *</label>
+
+                <select id="category" required>
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option value="Electricity">
+                        Electricity
+                    </option>
+
+                    <option value="Plumbing">
+                        Plumbing
+                    </option>
+
+                    <option value="Water Supply">
+                        Water Supply
+                    </option>
+
+                    <option value="Internet">
+                        Internet
+                    </option>
+
+                    <option value="Housekeeping">
+                        Housekeeping
+                    </option>
+
+                    <option value="Maintenance">
+                        Maintenance
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Description *</label>
+
+                <textarea
+                    id="description"
+                    placeholder="Describe the problem"
+                    required></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Priority / Severity *</label>
+
+                <select id="priority" required>
+
+                    <option value="">
+                        Select priority
+                    </option>
+
+                    <option value="Low">
+                        Low
+                    </option>
+
+                    <option value="Medium">
+                        Medium
+                    </option>
+
+                    <option value="High">
+                        High
+                    </option>
+
+                    <option value="Critical">
+                        Critical
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Additional Information</label>
+
+                <textarea
+                    id="additionalInfo"
+                    placeholder="Any additional information"></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-success">
+
+                Submit Complaint
+
+            </button>
+
+
+            <a
+                href="index.html"
+                class="btn">
+
+                Cancel
+
+            </a>
+
+
+            <div id="message" class="message"></div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

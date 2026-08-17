@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Complaint - PGCare</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">PGCare</div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="complaints.html">Complaints</a>
+    </div>
+
+</nav>
+
+
+<div class="container">
+
+    <h1>Edit Complaint</h1>
+
+    <br>
+
+    <div class="form-box">
+
+        <form id="editForm">
+
+            <div class="form-group">
+
+                <label>Resident Name</label>
+
+                <input
+                    type="text"
+                    id="residentName"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Room / Flat Number</label>
+
+                <input
+                    type="text"
+                    id="roomNumber"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Contact</label>
+
+                <input
+                    type="text"
+                    id="contact"
+                    maxlength="10"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Category</label>
+
+                <select id="category">
+
+                    <option value="Electricity">
+                        Electricity
+                    </option>
+
+                    <option value="Plumbing">
+                        Plumbing
+                    </option>
+
+                    <option value="Water Supply">
+                        Water Supply
+                    </option>
+
+                    <option value="Internet">
+                        Internet
+                    </option>
+
+                    <option value="Housekeeping">
+                        Housekeeping
+                    </option>
+
+                    <option value="Maintenance">
+                        Maintenance
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Description</label>
+
+                <textarea
+                    id="description"
+                    required></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Priority</label>
+
+                <select id="priority">
+
+                    <option value="Low">Low</option>
+
+                    <option value="Medium">Medium</option>
+
+                    <option value="High">High</option>
+
+                    <option value="Critical">
+                        Critical
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Additional Information</label>
+
+                <textarea id="additionalInfo"></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-success">
+
+                Save Changes
+
+            </button>
+
+
+            <a
+                href="complaints.html"
+                class="btn">
+
+                Cancel
+
+            </a>
+
+
+            <div id="message" class="message"></div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
